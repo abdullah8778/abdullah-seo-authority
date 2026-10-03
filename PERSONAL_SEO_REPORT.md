@@ -92,7 +92,7 @@ Each page includes crawler-visible JSON-LD with:
 The Person entity uses only the verified `sameAs` links:
 
 - LinkedIn: https://linkedin.com/in/laboratory-abdullah
-- GitHub: https://github.com/abdullah8778/nail-health-analyzer
+- GitHub profile: https://github.com/abdullah8778
 
 No unsupported award, publication, employer, patent, client, partnership or credential data is represented.
 
@@ -104,9 +104,11 @@ LinkedIn is the strongest call to action in the header, hero, related content an
 
 ## 7. GitHub links
 
-Verified featured repository: https://github.com/abdullah8778/nail-health-analyzer
+Verified public GitHub destination: https://github.com/abdullah8778
 
-The Nail Health Analyzer page is based on the repository README and source files. It explicitly distinguishes a research-grade prototype from clinical validation and repeats the repository’s boundary that model performance is not yet established.
+The featured repository URL is private and is intentionally not rendered as a public outbound link: https://github.com/abdullah8778/nail-health-analyzer
+
+The Nail Health Analyzer page is based on the privately verified repository README and source files. It explicitly distinguishes a research-grade prototype from clinical validation and repeats the repository’s boundary that model performance is not yet established. The public site links to the author’s GitHub profile because the repository itself is private.
 
 ## 8. Privacy checks
 

@@ -27,7 +27,11 @@ test('every public page has unique, crawler-visible SEO essentials', async () =>
     assert.match(html, /<meta name="description" content="[^"]+">/);
     assert.match(html, /<link rel="canonical" href="https:\/\//);
     assert.match(html, /property="og:title"/);
+    assert.match(html, /property="og:type" content="website"/);
+    assert.match(html, /property="og:image:alt"/);
     assert.match(html, /name="twitter:card"/);
+    assert.match(html, /name="twitter:image:alt"/);
+    assert.match(html, /rel="noopener noreferrer"/);
     assert.match(html, /application\/ld\+json/);
     assert.match(html, /<main id="main">[\s\S]+<\/main>/);
     const title = html.match(/<title>([^<]+)<\/title>/)?.[1];
@@ -57,10 +61,22 @@ test('sitemap, robots and public-safe entity links are generated', async () => {
 
 test('the private research boundary is stated on the verified project page', async () => {
   const project = await htmlFor(pages.find((entry) => entry.slug === 'nail-health-analyzer'));
+  assert.match(project, /private GitHub project/i);
   assert.match(project, /research prototype/i);
   assert.match(project, /clinical performance/i);
   assert.match(project, /public_demo/i);
   assert.match(project, /private_research/i);
   assert.match(project, /not claim clinical accuracy|does not claim clinical accuracy/i);
+  assert.ok(!project.includes('github.com/abdullah8778/nail-health-analyzer'));
   assert.ok(!project.includes('Patient_ID=') && !project.includes('API_KEY='));
+});
+
+test('specialized structured data is limited to the verified software project', async () => {
+  for (const entry of pages) {
+    const html = await htmlFor(entry);
+    if (entry.slug === 'nail-health-analyzer') assert.match(html, /"@type":"SoftwareApplication"/);
+    else assert.ok(!html.includes('"@type":"SoftwareApplication"'));
+    assert.ok(!html.includes('"@type":"ResearchProject"'));
+    assert.ok(!html.includes('"@type":"CreativeWork"'));
+  }
 });

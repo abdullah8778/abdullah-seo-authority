@@ -1,5 +1,5 @@
 export const LINKEDIN_URL = 'https://linkedin.com/in/laboratory-abdullah';
-export const GITHUB_URL = 'https://github.com/abdullah8778/nail-health-analyzer';
+export const GITHUB_URL = 'https://github.com/abdullah8778';
 export const SITE_ORIGIN = process.env.PUBLIC_SITE_ORIGIN || 'https://8328-icaeky7th94ajhl3fd3sg-e74bd5ea.sg2.manus.computer';
 export const SITE_NAME = 'Abdullah Al-Qahtani — Healthcare Data, AI, Diagnostics & Innovation';
 export const PERSON_DESCRIPTION = 'A research-focused healthcare technology profile connecting health data, AI, diagnostics, medical technology and innovation.';
@@ -35,8 +35,8 @@ export const pages = [
         { label: 'Clinical research and real-world evidence', text: 'Keeping research questions connected to data quality, reproducibility, validation and the limits of available evidence.' },
         { label: 'Professional community', text: 'Building a development-oriented space where professional advancement, innovation and research can reinforce one another.' }
       ]),
-      section('A public project with explicit research boundaries', [
-        'Nail Health Analyzer is a verified public GitHub project that combines image quality control, optical features, data ingestion and reproducible machine-learning validation workflows. The repository explicitly states that model performance is not yet established and that the project does not claim clinical performance.',
+      section('A private project with explicit research boundaries', [
+        'Nail Health Analyzer is a verified private GitHub project that combines image quality control, optical features, data ingestion and reproducible machine-learning validation workflows. The repository explicitly states that model performance is not yet established and that the project does not claim clinical performance.',
         'That distinction matters: a technical prototype can be useful for learning and research design while remaining separate from clinical validation, regulatory approval or a deployed diagnostic service.'
       ]),
       section('Start with the professional profile', [
@@ -102,7 +102,7 @@ export const pages = [
     h1: 'Health data that can support better questions.',
     intro: 'Healthcare data analytics is the discipline that connects clinical context with structured evidence, reproducible analysis and practical decision support.',
     topics: ['Health Data', 'Analytics', 'Real-World Evidence', 'Data Quality', 'Clinical Research'],
-    schema: 'ResearchProject',
+    schema: 'WebPage',
     sections: [
       section('What the analytics lens adds', [
         'Healthcare data is shaped by how it is collected, labeled, measured and used. Abdullah’s interest is in making those assumptions visible: what a field means, which records can be compared and what a result can legitimately support.'
@@ -126,7 +126,7 @@ export const pages = [
     h1: 'Healthcare AI with evidence boundaries built in.',
     intro: 'Healthcare AI is most useful when it is connected to a real workflow, a defined dataset and a validation process that people can inspect.',
     topics: ['Healthcare AI', 'Automation', 'Machine Learning', 'Validation', 'Human Review'],
-    schema: 'ResearchProject',
+    schema: 'WebPage',
     sections: [
       section('The practical question', [
         'Abdullah’s interest is in AI-powered healthcare systems that help with structured work: data review, image analysis, decision support, research operations and repeatable quality checks. The aim is not to use AI as a label, but to understand where it can add measurable value.'
@@ -150,7 +150,7 @@ export const pages = [
     h1: 'Medical-device ideas treated as engineering and research questions.',
     intro: 'Medical-device innovation requires more than a promising concept. It requires a defined measurement, a usable workflow, evidence and a clear route through validation.',
     topics: ['Medical Devices', 'R&D', 'Optical Measurement', 'Diagnostics', 'Validation'],
-    schema: 'ResearchProject',
+    schema: 'WebPage',
     sections: [
       section('The device perspective', [
         'Abdullah’s interest in medical technology focuses on the space where clinical needs, measurement science, software and workflow design meet. A device concept is valuable when its intended use, inputs, outputs and limitations can be described clearly.'
@@ -175,7 +175,7 @@ export const pages = [
     h1: 'Exploring how diagnostic signals can become usable workflows.',
     intro: 'Diagnostic innovation is the space where a biological question, an observable signal, an instrument and a validated workflow must fit together.',
     topics: ['Diagnostics', 'Optical Imaging', 'Nail-bed Imaging', 'AI', 'Workflow Design'],
-    schema: 'ResearchProject',
+    schema: 'WebPage',
     sections: [
       section('Research concepts, not clinical promises', [
         'Abdullah’s interests include non-invasive diagnostic concepts, optical imaging, nail-bed imaging and healthcare AI. These are research directions and experimental questions, not claims that a particular signal is already a clinically reliable measurement.'
@@ -199,7 +199,7 @@ export const pages = [
     h1: 'Research direction across data, diagnostics and biology.',
     intro: 'This is a map of Abdullah’s research interests and public project direction. It is not a list of invented publications or institutional affiliations.',
     topics: ['Clinical Research', 'Genomics', 'Infectious Diseases', 'Diagnostics', 'Health Data'],
-    schema: 'ResearchProject',
+    schema: 'WebPage',
     sections: [
       section('Clinical research and health data', [
         'Clinical research interests include study workflows, health data quality, real-world evidence and the design of analyses that respect the difference between an observation, a prototype result and a validated finding.'
@@ -223,7 +223,7 @@ export const pages = [
     h1: 'Innovation begins with a question and earns confidence through validation.',
     intro: 'This page describes invention interests without converting experimental ideas into unsupported clinical claims.',
     topics: ['Inventions', 'Diagnostic Concepts', 'Prototyping', 'Medical Technology', 'Validation'],
-    schema: 'CreativeWork',
+    schema: 'WebPage',
     sections: [
       section('What counts as an invention at this stage', [
         'A research concept is a proposed relationship or workflow. A prototype makes that concept testable. Research establishes a method and evidence base. Validation challenges the method with appropriate data. Clinical deployment is a separate, later standard.'
@@ -271,7 +271,7 @@ export const pages = [
       ])
     ],
     related: ['github-projects', 'diagnostic-innovation', 'healthcare-ai', 'research-projects'],
-    primaryExternal: { label: 'View the verified project on GitHub', href: GITHUB_URL }
+    primaryExternal: { label: 'View Abdullah’s GitHub profile', href: GITHUB_URL }
   }),
   page('github-projects', {
     title: 'GitHub Projects | Abdullah Al-Qahtani',
@@ -280,10 +280,10 @@ export const pages = [
     h1: 'Code as a public record of technical and research thinking.',
     intro: 'GitHub is used as part of Abdullah’s technical and research portfolio: a place to document workflows, prototypes, assumptions and validation boundaries.',
     topics: ['GitHub', 'Technical Portfolio', 'Research Software', 'Python', 'Diagnostics'],
-    schema: 'CreativeWork',
+    schema: 'WebPage',
     sections: [
       section('Featured project: Nail Health Analyzer', [
-        'The verified repository is a Python/FastAPI research prototype focused on image quality control, optical features, data ingestion and reproducible machine-learning validation. It includes a public-demo/private-research separation and explicit gates against data leakage and unsupported performance claims.'
+        'The verified private repository is a Python/FastAPI research prototype focused on image quality control, optical features, data ingestion and reproducible machine-learning validation. It includes a public-demo/private-research separation and explicit gates against data leakage and unsupported performance claims.'
       ]),
       section('What to look for in the code', [], [
         { label: 'Reproducibility', text: 'Versioned datasets, model cards, documented features and a workflow that records how data reaches evaluation.' },
@@ -296,7 +296,7 @@ export const pages = [
       ])
     ],
     related: ['nail-health-analyzer', 'healthcare-data-analytics', 'healthcare-ai', 'linkedin'],
-    primaryExternal: { label: 'View Abdullah’s GitHub project', href: GITHUB_URL }
+    primaryExternal: { label: 'View Abdullah’s GitHub profile', href: GITHUB_URL }
   }),
   page('professional-mastery-community', {
     title: 'Professional Mastery Community | مجتمع السيطرة المهنية',
@@ -305,7 +305,7 @@ export const pages = [
     h1: 'Professional mastery through advancement, innovation and research.',
     intro: 'The Professional Mastery Community is a professional development and advancement ecosystem for people who want to strengthen their positioning, practice, innovation and research direction.',
     topics: ['Professional Development', 'Innovation', 'Research', 'Networking', 'Career Development'],
-    schema: 'CreativeWork',
+    schema: 'WebPage',
     sections: [
       section('More than a generic social group', [
         'مجتمع السيطرة المهنية is framed around purposeful professional growth: clearer positioning, practical learning, knowledge sharing, networking and collaboration. The emphasis is on what members can practice, discuss and build—not on unsupported scale claims.'
@@ -331,7 +331,7 @@ export const pages = [
     h1: 'A community ecosystem for people building professional authority.',
     intro: 'The community work connected to Abdullah’s profile is about advancement, learning and collaboration across healthcare, technology, innovation and research.',
     topics: ['Community', 'Future Med Leaders', 'Networking', 'Workshops', 'Professional Authority'],
-    schema: 'CreativeWork',
+    schema: 'WebPage',
     sections: [
       section('A clear purpose', [
         'Professional communities become useful when they help people move from aspiration to practice. The intended focus here is professional development, knowledge sharing, networking, workshops, career direction and the ability to communicate useful work.'
@@ -355,7 +355,7 @@ export const pages = [
     h1: 'Turning healthcare questions into research-ready work.',
     intro: 'Innovation and research are connected by a shared discipline: define the question, make the workflow concrete, test the assumptions and communicate the limits.',
     topics: ['Healthcare Innovation', 'Research', 'Prototyping', 'Evidence', 'Collaboration'],
-    schema: 'ResearchProject',
+    schema: 'WebPage',
     sections: [
       section('The bridge between an idea and evidence', [
         'Innovation creates new possibilities; research creates a way to examine them. In healthcare, the bridge has to include data quality, user context, safety, reproducibility and a clear distinction between an interesting signal and a clinically established result.'
@@ -444,7 +444,7 @@ export const pages = [
     h1: 'A record of work, not an invented awards page.',
     intro: 'This page organizes verified public activities and projects without turning interests into awards, publications or credentials that have not been documented.',
     topics: ['Projects', 'Research Activities', 'Technical Work', 'Community Building', 'Professional Development'],
-    schema: 'CreativeWork',
+    schema: 'WebPage',
     sections: [
       section('Technical projects', [
         'The verified Nail Health Analyzer repository is a research-grade technical prototype covering image QC, optical features, data ingestion and reproducible ML validation. It is a project/activity record, not a claim of clinical performance.'
@@ -485,7 +485,7 @@ for (const [slug, name, description] of topicPages) {
     h1: `${name}: a focused topic in Abdullah’s authority system.`,
     intro: `This cornerstone topic page places ${name.toLowerCase()} within the wider relationship between healthcare, data, AI, diagnostics, research and innovation. It is a focused entry point, not a mass-produced blog archive.`,
     topics: [name, 'Healthcare Technology', 'Research', 'Innovation'],
-    schema: 'ResearchProject',
+    schema: 'WebPage',
     sections: [
       section(`Why ${name.toLowerCase()} matters here`, [
         `The topic connects to Abdullah’s professional direction through a research-focused healthcare technology lens. The emphasis is on clear questions, public-safe information, useful workflows and evidence that can be examined.`
@@ -530,7 +530,7 @@ function renderHeader(path) {
     ['/professional-mastery-community', 'Community'],
     ['/linkedin', 'LinkedIn']
   ];
-  return `<header class="site-header"><a class="skip-link" href="#main">Skip to content</a><div class="header-inner"><a class="brand" href="/" aria-label="Abdullah Al-Qahtani home"><img src="/brand-mark.svg" alt="" width="42" height="42"><span><strong>ABDULLAH</strong><small>Healthcare · Data · Innovation</small></span></a><nav aria-label="Primary navigation"><ul>${links.map(([href, label]) => `<li><a class="${path === href ? 'is-active' : ''}" href="${href}">${label}</a></li>`).join('')}</ul></nav><a class="header-link" href="${LINKEDIN_URL}" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div></header>`;
+  return `<header class="site-header"><a class="skip-link" href="#main">Skip to content</a><div class="header-inner"><a class="brand" href="/" aria-label="Abdullah Al-Qahtani home"><img src="/brand-mark.svg" alt="" width="42" height="42"><span><strong>ABDULLAH</strong><small>Healthcare · Data · Innovation</small></span></a><nav aria-label="Primary navigation"><ul>${links.map(([href, label]) => `<li><a class="${path === href ? 'is-active' : ''}" href="${href}">${label}</a></li>`).join('')}</ul></nav><a class="header-link" href="${LINKEDIN_URL}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div></header>`;
 }
 
 function renderBreadcrumbs(entry) {
@@ -554,7 +554,7 @@ function renderJsonLd(entry) {
     { '@type': 'WebPage', '@id': `${absoluteUrl(entry.path)}#webpage`, url: absoluteUrl(entry.path), name: entry.title, description: entry.description, isPartOf: { '@id': `${SITE_ORIGIN}/#website` }, about: { '@id': `${SITE_ORIGIN}/#person` }, breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Authority system', item: SITE_ORIGIN }, { '@type': 'ListItem', position: 2, name: entry.h1, item: absoluteUrl(entry.path) }] } }
   ];
   if (entry.schema === 'SoftwareApplication') {
-    graph.push({ '@type': 'SoftwareApplication', name: 'Nail Health Analyzer V4.1', applicationCategory: 'HealthApplication', operatingSystem: 'Cross-platform', url: GITHUB_URL, description: 'A research-grade data-ingestion, image-QC, optical-feature and reproducible machine-learning validation prototype. Clinical performance is not claimed.', author: { '@id': `${SITE_ORIGIN}/#person` } });
+    graph.push({ '@type': 'SoftwareApplication', name: 'Nail Health Analyzer V4.1', applicationCategory: 'HealthApplication', operatingSystem: 'Cross-platform', url: absoluteUrl(entry.path), description: 'A research-grade data-ingestion, image-QC, optical-feature and reproducible machine-learning validation prototype. Clinical performance is not claimed.', author: { '@id': `${SITE_ORIGIN}/#person` } });
   } else if (entry.schema === 'ResearchProject') {
     graph.push({ '@type': 'ResearchProject', name: entry.h1, description: entry.description, url: absoluteUrl(entry.path), funder: undefined, member: { '@id': `${SITE_ORIGIN}/#person` } });
   } else if (entry.schema === 'CreativeWork') {
@@ -566,13 +566,13 @@ function renderJsonLd(entry) {
 
 function renderCta(entry) {
   const external = entry.primaryExternal || { label: 'Connect with Abdullah on LinkedIn', href: LINKEDIN_URL };
-  return `<section class="destination"><div><p class="eyebrow">Primary professional destination</p><h2>Keep the professional profile in view.</h2><p>The authority pages explain the work. LinkedIn is the place to connect with Abdullah and follow his professional direction.</p></div><div class="destination-actions"><a class="button button-primary" href="${external.href}" target="_blank" rel="noreferrer">${esc(external.label)} <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="${LINKEDIN_URL}" target="_blank" rel="noreferrer">View Abdullah’s professional profile</a></div></section>`;
+  return `<section class="destination"><div><p class="eyebrow">Primary professional destination</p><h2>Keep the professional profile in view.</h2><p>The authority pages explain the work. LinkedIn is the place to connect with Abdullah and follow his professional direction.</p></div><div class="destination-actions"><a class="button button-primary" href="${external.href}" target="_blank" rel="noopener noreferrer">${esc(external.label)} <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="${LINKEDIN_URL}" target="_blank" rel="noopener noreferrer">View Abdullah’s professional profile</a></div></section>`;
 }
 
 export function renderPage(entry) {
   const keywords = (entry.topics || []).slice(0, 8).join(', ');
   const path = entry.path;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(entry.title)}</title><meta name="description" content="${esc(entry.description)}"><meta name="keywords" content="${esc(keywords)}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absoluteUrl(path)}"><meta property="og:type" content="${path === '/' ? 'website' : 'article'}"><meta property="og:title" content="${esc(entry.title)}"><meta property="og:description" content="${esc(entry.description)}"><meta property="og:url" content="${absoluteUrl(path)}"><meta property="og:site_name" content="${esc(SITE_NAME)}"><meta property="og:image" content="${absoluteUrl('/brand-mark.svg')}"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="${esc(entry.title)}"><meta name="twitter:description" content="${esc(entry.description)}"><meta name="twitter:image" content="${absoluteUrl('/brand-mark.svg')}"><meta name="theme-color" content="#102329"><link rel="icon" href="/brand-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">${renderJsonLd(entry)}</head><body>${renderHeader(path)}<main id="main"><div class="page-shell">${renderBreadcrumbs(entry)}<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(entry.eyebrow)}</p><h1>${esc(entry.h1)}</h1><p class="hero-intro">${esc(entry.intro)}</p><div class="hero-actions"><a class="button button-primary" href="${LINKEDIN_URL}" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>${path === '/' || path.includes('github') || path.includes('nail-health') ? `<a class="button button-quiet" href="${GITHUB_URL}" target="_blank" rel="noreferrer">View GitHub project</a>` : `<a class="button button-quiet" href="/research-projects">Explore research direction</a>`}</div></div><aside class="hero-aside"><div class="signal-panel"><span class="signal-dot"></span><span>Healthcare · Data · AI · Diagnostics</span><div class="signal-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Research-focused / public-safe</small></div>${renderTopics(entry.topics)}</aside></section><div class="content-layout"><article>${entry.sections.map(renderSection).join('')}</article><aside class="side-note"><p class="eyebrow">Identity thread</p><p><strong>Abdullah Al-Qahtani</strong></p><p>${esc(PERSON_DESCRIPTION)}</p><a href="${LINKEDIN_URL}" target="_blank" rel="noreferrer">Follow the professional profile ↗</a></aside></div>${renderRelated(entry)}${renderCta(entry)}</div></main><footer class="site-footer"><div><strong>ABDULLAH AL-QAHTANI</strong><span>Healthcare Data · AI · Diagnostics · Innovation</span></div><div><a href="/sitemap.xml">Sitemap</a><a href="/robots.txt">Robots</a><a href="${GITHUB_URL}" target="_blank" rel="noreferrer">GitHub ↗</a><a href="${LINKEDIN_URL}" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></footer></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(entry.title)}</title><meta name="description" content="${esc(entry.description)}"><meta name="keywords" content="${esc(keywords)}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absoluteUrl(path)}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(entry.title)}"><meta property="og:description" content="${esc(entry.description)}"><meta property="og:url" content="${absoluteUrl(path)}"><meta property="og:site_name" content="${esc(SITE_NAME)}"><meta property="og:image" content="${absoluteUrl('/brand-mark.svg')}"><meta property="og:image:alt" content="Abdullah Al-Qahtani identity mark"><meta property="og:image:width" content="96"><meta property="og:image:height" content="96"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="${esc(entry.title)}"><meta name="twitter:description" content="${esc(entry.description)}"><meta name="twitter:image" content="${absoluteUrl('/brand-mark.svg')}"><meta name="twitter:image:alt" content="Abdullah Al-Qahtani identity mark"><meta name="theme-color" content="#102329"><link rel="icon" href="/brand-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">${renderJsonLd(entry)}</head><body>${renderHeader(path)}<main id="main"><div class="page-shell">${renderBreadcrumbs(entry)}<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(entry.eyebrow)}</p><h1>${esc(entry.h1)}</h1><p class="hero-intro">${esc(entry.intro)}</p><div class="hero-actions"><a class="button button-primary" href="${LINKEDIN_URL}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>${path === '/' || path.includes('github') || path.includes('nail-health') ? `<a class="button button-quiet" href="${GITHUB_URL}" target="_blank" rel="noopener noreferrer">View GitHub profile</a>` : `<a class="button button-quiet" href="/research-projects">Explore research direction</a>`}</div></div><aside class="hero-aside"><div class="signal-panel"><span class="signal-dot"></span><span>Healthcare · Data · AI · Diagnostics</span><div class="signal-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Research-focused / public-safe</small></div>${renderTopics(entry.topics)}</aside></section><div class="content-layout"><article>${entry.sections.map(renderSection).join('')}</article><aside class="side-note"><p class="eyebrow">Identity thread</p><p><strong>Abdullah Al-Qahtani</strong></p><p>${esc(PERSON_DESCRIPTION)}</p><a href="${LINKEDIN_URL}" target="_blank" rel="noopener noreferrer">Follow the professional profile ↗</a></aside></div>${renderRelated(entry)}${renderCta(entry)}</div></main><footer class="site-footer"><div><strong>ABDULLAH AL-QAHTANI</strong><span>Healthcare Data · AI · Diagnostics · Innovation</span></div><div><a href="/sitemap.xml">Sitemap</a><a href="/robots.txt">Robots</a><a href="${GITHUB_URL}" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a><a href="${LINKEDIN_URL}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></footer></body></html>`;
 }
 
 export function render404() {
